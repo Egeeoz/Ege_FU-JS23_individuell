@@ -1,0 +1,10 @@
+section {
+  width: 60px;
+  height: 68px;
+  background-image: url(../assets/cart.png);
+  background-position: center;
+  position: fixed;
+  margin: 0.5rem 1rem 0 0;
+  right: 0;
+  cursor: pointer;
+}

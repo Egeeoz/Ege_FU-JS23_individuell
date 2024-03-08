@@ -1,5 +1,12 @@
+import Layout from "../Layout";
+import "../styles/styles.css";
+
 const MenuPage = () => {
-  return <div>MenuPage</div>;
+  return (
+    <Layout>
+      <main>MenuPage</main>
+    </Layout>
+  );
 };
 
 export default MenuPage;

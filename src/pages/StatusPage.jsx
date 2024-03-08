@@ -1,5 +1,11 @@
+import Layout from "../Layout";
+
 const StatusPage = () => {
-  return <div>StatusPage</div>;
+  return (
+    <Layout>
+      <div>StatusPage</div>
+    </Layout>
+  );
 };
 
 export default StatusPage;

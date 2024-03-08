@@ -1,5 +1,11 @@
+import Layout from "../Layout";
+
 const CartPage = () => {
-  return <div>CartPage</div>;
+  return (
+    <Layout>
+      <div>CartPage</div>
+    </Layout>
+  );
 };
 
 export default CartPage;

@@ -1,6 +1,12 @@
+import Layout from "../Layout";
+
 const AboutPage = () => {
   console.log("Rendering AboutPage");
-  return <div>AboutPage</div>;
+  return (
+    <Layout>
+      <div>AboutPage</div>
+    </Layout>
+  );
 };
 
 export default AboutPage;

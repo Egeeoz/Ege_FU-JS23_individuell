@@ -1,13 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-import AppRoutes from "./AppRoutes"; // Make sure to create this component
+import AppRoutes from "./AppRoutes";
 import Navigation from "./components/Navigation"; // Your dropdown nav component
+import "./App.css";
 
 function App() {
   return (
     <Router>
       <div>
-        <Navigation />{" "}
+        {/* <Navigation /> */}
         {/* This can be outside or inside AppRoutes, depending on your layout needs */}
         <AppRoutes />
       </div>

@@ -1,5 +1,7 @@
+import "../styles/navigation.css";
+
 const Navigation = () => {
-  return <div>Navigation</div>;
+  return <nav></nav>;
 };
 
 export default Navigation;

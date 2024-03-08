@@ -1,0 +1,8 @@
+nav {
+  width: 48px;
+  aspect-ratio: 1/1;
+  background-image: url(../assets/navicon.png);
+  position: fixed;
+  margin: 1rem 0 0 1rem;
+  cursor: pointer;
+}
