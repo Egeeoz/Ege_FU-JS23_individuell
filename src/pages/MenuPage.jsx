@@ -4,7 +4,7 @@ import "../styles/styles.css";
 const MenuPage = () => {
   return (
     <Layout>
-      <main>MenuPage</main>
+      <main></main>
     </Layout>
   );
 };
