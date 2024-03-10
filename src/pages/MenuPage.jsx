@@ -1,9 +1,11 @@
 import Layout from "../Layout";
-import "../styles/styles.css";
+import Cart from "../components/Cart";
+import "../styles/menuPage.css";
 
 const MenuPage = () => {
   return (
     <Layout>
+      <Cart />
       <main className="menu-page-container">
         <section className="title-section">
           <h1>Meny</h1>

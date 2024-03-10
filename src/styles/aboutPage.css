@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: #f3e4e1;
+}
+
+.about-page-container {
+  height: 120vh;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutPage-title-section {
+  margin-top: 5rem;
+}
+
+.aboutPage-title-section h1 {
+  font-family: "PT Serif", serif;
+  font-weight: bold;
+  font-size: 42px;
+}
+
+.about-page-container p {
+  font-family: "Work Sans", sans-serif;
+}
+
+.text-section-one,
+.text-section-two {
+  margin: 1rem 0;
+}
+
+.text-section-one p {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.text-section-two p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.owner-profile-section h2 {
+  margin-top: -1.7rem;
+  font-size: 22px;
+  text-align: center;
+}
+
+.owner-profile-section p {
+  font-size: 14px;
+  text-align: center;
+}
+
+.owner-image {
+  margin: 2rem auto;
+  background-image: url(../assets/profileImage.png);
+  width: 74px;
+  aspect-ratio: 1/1;
+}
