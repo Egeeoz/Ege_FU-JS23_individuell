@@ -1,8 +1,80 @@
-nav {
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Navigation Icon Style (Hamburger Menu) */
+.nav-icon {
   width: 48px;
-  aspect-ratio: 1/1;
+  height: 48px;
   background-image: url(../assets/navicon.png);
-  position: absolute;
-  margin: 1rem 0 0 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
   cursor: pointer;
+  z-index: 1000;
+}
+
+/* Full-Screen Navigation Menu Style */
+.nav-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2f2926;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* When navigation is open, show the menu */
+.nav-icon.open + .nav-menu {
+  display: flex;
+}
+
+/* Style for the close button (X) */
+.close-btn {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 48px;
+  height: 48px;
+  background-image: url(../assets/closeicon.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* When navigation is open, show the close button */
+.nav-icon.open .close-btn {
+  display: block;
+}
+
+/* Style the list items */
+.nav-menu ul {
+  text-align: center;
+  list-style: none;
+}
+
+.nav-menu ul li {
+  margin: 2rem 0;
+}
+
+.nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 32px;
+  font-family: "PT Serif", serif;
+  font-weight: bold;
+}
+
+/* Change the nav icon to "X" when open */
+.nav-icon.open {
+  background-image: url(../assets/close.png);
 }
