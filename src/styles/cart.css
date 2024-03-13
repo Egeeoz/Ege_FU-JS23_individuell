@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* Styling for the cart icon */
 .cart-icon {
   width: 60px;
   height: 68px;
@@ -11,6 +12,7 @@
   cursor: pointer;
 }
 
+/* Styling for the cart box when its open */
 .cart-view {
   position: fixed;
   top: 53%;
@@ -25,10 +27,12 @@
   border-radius: 5px;
 }
 
-/* The cart is open, slide it into view */
+/* When the cart is open slide it into view */
 .cart-view.open {
   transform: translate(-50%, -50%);
 }
+
+/* The rest is just styling */
 
 .cart-view h1 {
   text-align: center;
@@ -36,10 +40,6 @@
   font-weight: bold;
   margin-top: 1rem;
 }
-
-/* .cart-view p {
-  font-family: "Work Sans", sans-serif;
-} */
 
 .cart-items {
   display: flex;
@@ -59,25 +59,31 @@
 .cart-item {
   font-size: 20px;
   font-family: "PT Serif";
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .cart-item-price {
   font-family: "Work Sans";
+  font-size: 14px;
 }
 
-/* .vector-up {
+.item-quantity {
+  font-family: "Work Sans";
+}
+
+.vector-up {
   background-image: url(../assets/UpVector.png);
   width: 8px;
   height: 5px;
+  border: none;
 }
 
 .vector-down {
   background-image: url(../assets/DownVector.png);
   width: 8px;
   height: 5px;
-} */
-
+  border: none;
+}
 .total-price-section {
   display: flex;
   justify-content: space-between;
@@ -117,4 +123,5 @@
 .empty-cart {
   font-family: "Work Sans";
   text-align: center;
+  margin: 1rem 0;
 }

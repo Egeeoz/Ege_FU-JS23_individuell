@@ -3,6 +3,7 @@ import "../styles/statusPage.css";
 import { Link } from "react-router-dom";
 
 const StatusPage = () => {
+  // Statuspage jsx
   return (
     <Layout>
       <main className="status-page-container">

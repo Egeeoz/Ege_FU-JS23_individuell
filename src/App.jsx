@@ -6,11 +6,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div>
-        {/* <Navigation /> */}
-        {/* This can be outside or inside AppRoutes, depending on your layout needs */}
-        <AppRoutes />
-      </div>
+      <AppRoutes />
     </Router>
   );
 }

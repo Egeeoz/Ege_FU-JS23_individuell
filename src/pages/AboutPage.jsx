@@ -2,6 +2,7 @@ import Layout from "../Layout";
 import "../styles/aboutPage.css";
 
 const AboutPage = () => {
+  // About page jsx
   return (
     <Layout>
       <main className="about-page-container">

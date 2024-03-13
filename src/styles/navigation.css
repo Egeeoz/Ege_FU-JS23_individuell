@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* Navigation Icon Style (Hamburger Menu) */
+/* Navigation icon style */
 .nav-icon {
   width: 48px;
   height: 48px;
@@ -15,7 +15,7 @@
   z-index: 1000;
 }
 
-/* Full-Screen Navigation Menu Style */
+/* Fullscreen nav menu styling */
 .nav-menu {
   display: none;
   position: fixed;
@@ -30,7 +30,7 @@
   z-index: 999;
 }
 
-/* When navigation is open, show the menu */
+/* Styling to show the menu when nav is open */
 .nav-icon.open + .nav-menu {
   display: flex;
 }
@@ -51,12 +51,12 @@
   z-index: 1000;
 }
 
-/* When navigation is open, show the close button */
+/* Shows close button when nav is open */
 .nav-icon.open .close-btn {
   display: block;
 }
 
-/* Style the list items */
+/* Style for the list items */
 .nav-menu ul {
   text-align: center;
   list-style: none;
@@ -74,7 +74,7 @@
   font-weight: bold;
 }
 
-/* Change the nav icon to "X" when open */
+/* Styling to change the nav icon to and X when navmenu is open */
 .nav-icon.open {
   background-image: url(../assets/close.png);
 }

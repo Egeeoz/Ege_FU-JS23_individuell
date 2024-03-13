@@ -4,7 +4,9 @@ import "../styles/menuPage.css";
 import useStore from "../store";
 
 const MenuPage = () => {
+  // State for adding items to cart
   const addToCart = useStore((state) => state.addToCart);
+  // Array of menu items
   const menuItems = [
     { name: "BryggKaffe", price: 49 },
     { name: "Caffè Doppio", price: 49 },
@@ -14,6 +16,7 @@ const MenuPage = () => {
     { name: "Cortado", price: 39 },
   ];
 
+  // Function to add items to cart
   const handleAddToCart = (item) => {
     addToCart(item);
   };
@@ -29,32 +32,26 @@ const MenuPage = () => {
           <section className="icons-section">
             <p
               className="add-icon"
-              id="add-1"
               onClick={() => handleAddToCart(menuItems[0])}
             ></p>
             <p
               className="add-icon"
-              id="add-2"
               onClick={() => handleAddToCart(menuItems[1])}
             ></p>
             <p
               className="add-icon"
-              id="add-3"
               onClick={() => handleAddToCart(menuItems[2])}
             ></p>
             <p
               className="add-icon"
-              id="add-4"
               onClick={() => handleAddToCart(menuItems[3])}
             ></p>
             <p
               className="add-icon"
-              id="add-5"
               onClick={() => handleAddToCart(menuItems[4])}
             ></p>
             <p
               className="add-icon"
-              id="add-6"
               onClick={() => handleAddToCart(menuItems[5])}
             ></p>
           </section>

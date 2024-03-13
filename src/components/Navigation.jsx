@@ -3,17 +3,22 @@ import "../styles/navigation.css";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
+  // State for opening and closing nav
   const [isOpen, setIsopen] = useState(false);
 
+  // Function to open the nav
   const toggleMenu = () => {
     setIsopen(!isOpen);
   };
 
   return (
+    // Nav menu with links to other routes
     <>
-      <nav className={`nav-icon ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
-        {/* Icon Content */}
-      </nav>
+      <nav
+        // Contional classnames depending if the nav is open or not
+        className={`nav-icon ${isOpen ? "open" : ""}`}
+        onClick={toggleMenu}
+      ></nav>
       {isOpen && (
         <div className="nav-menu">
           <button className="close-btn" onClick={toggleMenu}>

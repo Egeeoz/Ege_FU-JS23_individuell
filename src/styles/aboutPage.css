@@ -1,18 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* Container for the whole page */
 .about-page-container {
-  height: 120vh;
+  height: 127vh;
   width: 100%;
   background-color: #f3e4e1;
+  background-image: url(../assets/header.png), url(../assets/bottom.png);
+  background-repeat: no-repeat;
+  background-size: 100%, 100%;
+  background-position: top, bottom;
 }
 
+/* Container for the content thats going in the page */
 .main-content {
-  height: 120vh;
+  height: 127vh;
   width: 80%;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
 }
+
+/* The rest is just styling */
 
 .aboutPage-title-section {
   margin-top: 5rem;
@@ -22,6 +30,7 @@
   font-family: "PT Serif", serif;
   font-weight: bold;
   font-size: 42px;
+  margin-top: 2rem;
 }
 
 .about-page-container p {
