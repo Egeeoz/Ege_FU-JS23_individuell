@@ -1,4 +1,6 @@
-.cart {
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.cart-icon {
   width: 60px;
   height: 68px;
   background-image: url(../assets/cart.png);
@@ -7,4 +9,112 @@
   margin: 0.5rem 1rem 0 0;
   right: 0;
   cursor: pointer;
+}
+
+.cart-view {
+  position: fixed;
+  top: 53%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  background: white;
+  overflow-y: auto;
+  transform: translate(-50%, -170%);
+  transition: transform 0.6s ease;
+  z-index: 100;
+  border-radius: 5px;
+}
+
+/* The cart is open, slide it into view */
+.cart-view.open {
+  transform: translate(-50%, -50%);
+}
+
+.cart-view h1 {
+  text-align: center;
+  font-family: "PT Serif";
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* .cart-view p {
+  font-family: "Work Sans", sans-serif;
+} */
+
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  align-content: space-evenly;
+  width: 90%;
+  min-height: 60%;
+  margin: 0.5rem auto;
+}
+
+.cart-items-list {
+  display: flex;
+  justify-content: space-between;
+  max-height: 3vh;
+}
+
+.cart-item {
+  font-size: 20px;
+  font-family: "PT Serif";
+  font-weight: 500;
+}
+
+.cart-item-price {
+  font-family: "Work Sans";
+}
+
+/* .vector-up {
+  background-image: url(../assets/UpVector.png);
+  width: 8px;
+  height: 5px;
+}
+
+.vector-down {
+  background-image: url(../assets/DownVector.png);
+  width: 8px;
+  height: 5px;
+} */
+
+.total-price-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2.2rem;
+}
+
+.total-text,
+.total-price {
+  font-family: "PT Serif";
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.small-info-text {
+  margin: 0 2.2rem;
+  font-family: "Work Sans";
+}
+
+.button-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.cart-button {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "PT Serif";
+  color: white;
+  background: black;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 0.725rem 2rem;
+}
+
+.empty-cart {
+  font-family: "Work Sans";
+  text-align: center;
 }
